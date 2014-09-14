@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/find_glass"
+        android:title="Find Glass Conference" />
+    <item android:id="@+id/find_javascript"
+        android:title="Find JavaScript Conference" />
+    <item android:id="@+id/find_ruby"
+        android:title="Find Ruby Conference" />
+</menu>

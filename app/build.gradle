@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+repositories {
+    jcenter()
+    flatDir {
+        dirs 'prebuilt-libs'
+    }
+}
+
+android {
+    compileSdkVersion "Google Inc.:Glass Development Kit Preview:19"
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        applicationId "com.example.hariharasudhan.glassfirst"
+        minSdkVersion 19
+        targetSdkVersion 20
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            resources.srcDirs = ['src/main/resources', 'src/main/java/models']
+            java.srcDirs = ['src/main/java', 'src/main/java/models', 'src/main/java/adapter', 'src/main/java/model']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}

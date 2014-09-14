@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Open Mapped Conf</string>
+    <string name="title_activity_welcome_screen">Welcome</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_result">Event Results</string>
+
+</resources>
